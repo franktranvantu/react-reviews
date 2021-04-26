@@ -5,3 +5,21 @@
 /*    background-color: #bbeffd;*/
 /*    border: 1px solid #61dafb;*/
 /*}*/
+
+.recipe-ratings-list .rating-bar-wrapper {
+    background: rgba(0,0,0,.15);
+    display: inline-block;
+    width: 80%;
+    flex: 0 0 136px;
+    height: 10px;
+    position: relative;
+}
+
+.recipe-ratings-list .rating-bar-wrapper .rating-bar {
+    background: rgba(0,0,0,.3);
+    display: block;
+    position: absolute;
+    height: 10px;
+    top: 0;
+    left: 0;
+}

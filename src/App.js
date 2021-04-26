@@ -127,7 +127,7 @@ function App() {
                 </Col>
                 <Col>
                   <div className="recipe-review-top-item">
-                    <h6 className="recipe-review-top-item-header font-italic mb-3">Most helpful positive review</h6>
+                    <h6 className="recipe-review-top-item-header font-italic mb-3">Most helpful critical review</h6>
                     <div className="component ugc-review ugc-item recipe-review-wrapper" data-cms-id="5238360">
                       <div className="recipe-review-byline mb-3">
                         <a className="recipe-review-author" href="https://www.allrecipes.com/cook/11785786/">    <span
@@ -211,87 +211,71 @@ function App() {
                   </div>
                 </Col>
                 <Col>
-                  <div className="recipe-review-top-item">
-                    <h6 className="recipe-review-top-item-header font-italic mb-3">Most helpful positive review</h6>
-                    <div className="component ugc-review ugc-item recipe-review-wrapper" data-cms-id="5238360">
-                      <div className="recipe-review-byline mb-3">
-                        <a className="recipe-review-author" href="https://www.allrecipes.com/cook/11785786/">    <span
-                          className="reviewer-image-wrapper">
-                                  <img className="reviewer-image border rounded-circle"
-                                       src="https://images.media-allrecipes.com/mobile/allrecipes/images/icon-user-default_v2.png"
-                                       alt="" pinger-seen="true"/>
-                                </span>
-                          <span className="reviewer-name ml-2">RosieB</span>
-                        </a>
-                      </div>
-                      <div className="recipe-review-rating mb-3">
-                        <div className="component recipe-ratings">
-                          <span className="ratings-dropdown-button" aria-expanded="false">
-                            {/*<span className="review-star-text">Rating: 5 stars</span>*/}
-                            <span className="rating-star active" aria-hidden="true" data-rating="1"><svg width="20"
-                                                                                                         height="20"
-                                                                                                         viewBox="0 0 24 24"
-                                                                                                         role="img"
-                                                                                                         aria-hidden="true"
-                                                                                                         tabIndex="-1"
-                                                                                                         xmlns="http://www.w3.org/2000/svg"><path
+                  <div className="recipe-review-top-item recipe-review-top-item-ratings">
+                    <div className="recipe-ratings-list">
+                      <div className="ratings-count text-center font-italic">22 Ratings</div>
+                      <ul className="ratings-list list-unstyled mt-3">
+                        <li className="rating">
+                          <span className="rating-stars">5</span>
+                          <span className="icon-recipe-rating-star ml-1" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                 tabIndex="-1" xmlns="http://www.w3.org/2000/svg"><path
                               className="rating-star-filled"
                               d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
-                            <span className="rating-star active" aria-hidden="true" data-rating="2"><svg width="20"
-                                                                                                         height="20"
-                                                                                                         viewBox="0 0 24 24"
-                                                                                                         role="img"
-                                                                                                         aria-hidden="true"
-                                                                                                         tabIndex="-1"
-                                                                                                         xmlns="http://www.w3.org/2000/svg"><path
+                          <span className="rating-bar-wrapper ml-1">
+                          <span className="rating-bar" style={{width: '77%'}}></span>
+                        </span>
+                          <span className="rating-count ml-1">17</span>
+                        </li>
+                        <li className="rating">
+                          <span className="rating-stars">4</span>
+                          <span className="icon-recipe-rating-star ml-1" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                 tabIndex="-1" xmlns="http://www.w3.org/2000/svg"><path
                               className="rating-star-filled"
                               d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
-                            <span className="rating-star active" aria-hidden="true" data-rating="3"><svg width="20"
-                                                                                                         height="20"
-                                                                                                         viewBox="0 0 24 24"
-                                                                                                         role="img"
-                                                                                                         aria-hidden="true"
-                                                                                                         tabIndex="-1"
-                                                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                              className="rating-star-filled"
-                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
-                            <span className="rating-star active" aria-hidden="true" data-rating="4"><svg width="20"
-                                                                                                         height="20"
-                                                                                                         viewBox="0 0 24 24"
-                                                                                                         role="img"
-                                                                                                         aria-hidden="true"
-                                                                                                         tabIndex="-1"
-                                                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                              className="rating-star-filled"
-                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
-                            <span className="rating-star active" aria-hidden="true" data-rating="5"><svg width="20"
-                                                                                                         height="20"
-                                                                                                         viewBox="0 0 24 24"
-                                                                                                         role="img"
-                                                                                                         aria-hidden="true"
-                                                                                                         tabIndex="-1"
-                                                                                                         xmlns="http://www.w3.org/2000/svg"><path
-                              className="rating-star-filled"
-                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
+                          <span className="rating-bar-wrapper ml-1">
+                            <span className="rating-bar" style={{width: '14%'}}></span>
                           </span>
-                          <span className="recipe-review-date">10/31/2015</span>
-                        </div>
-                      </div>
-                      <div className="recipe-review-body mb-2">
-                        <div className="recipe-review-body--truncated">
-                          I used crushed tomatoes with basil in place of the diced tomatoes &amp; the basil (it's what I had on hand) &amp; I only added one can of tomato sauce as I prefer a thicker sauce.   I added homemade meatballs, simmered it about 30 minutes &amp; it was delicious. My hubby &amp; I both agreed it was the best spaghetti sauce I ever made &amp; this is how I will make it from now on.   It wasn't chunky ...
-                          just thick, rich &amp; delicious.  Thanks for sharing !!!      </div>
-                        <a className="link-view ugc-reviews-link" href="#" aria-label="Read Full Review">Read More</a>
-                      </div>
-                      <div className="recipe-review-helpful">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" role="img"
-                             aria-hidden="true" tabIndex="-1"><title>Thumb Up</title>
-                          <path
-                            d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
-                        </svg>
-                        <span className="recipe-review-helpful-link ml-2">Helpful</span>
-                        <span className="recipe-review-helpful-count ml-2">(4)</span>
-                      </div>
+                          <span className="rating-count ml-1">3</span>
+                        </li>
+                        <li className="rating">
+                          <span className="rating-stars">3</span>
+                          <span className="icon-recipe-rating-star ml-1" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                 tabIndex="-1" xmlns="http://www.w3.org/2000/svg"><path
+                              className="rating-star-filled"
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
+                          <span className="rating-bar-wrapper ml-1">
+                            <span className="rating-bar" style={{width: '9%'}}></span>
+                          </span>
+                          <span className="rating-count ml-1">2</span>
+                        </li>
+                        <li className="rating">
+                          <span className="rating-stars">2</span>
+                          <span className="icon-recipe-rating-star ml-1" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                 tabIndex="-1" xmlns="http://www.w3.org/2000/svg"><path
+                              className="rating-star-filled"
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
+                          <span className="rating-bar-wrapper ml-1">
+                            <span className="rating-bar" style={{width: '0%'}}></span>
+                          </span>
+                          <span className="rating-count ml-1">0</span>
+                        </li>
+                        <li className="rating">
+                          <span className="rating-stars">1</span>
+                          <span className="icon-recipe-rating-star ml-1" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true"
+                                 tabIndex="-1" xmlns="http://www.w3.org/2000/svg"><path
+                              className="rating-star-filled"
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span>
+                          <span className="rating-bar-wrapper ml-1">
+                            <span className="rating-bar" style={{width: '0%'}}></span>
+                          </span>
+                          <span className="rating-count ml-1">0</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </Col>
@@ -300,7 +284,7 @@ function App() {
           </Card>
         </Col>
       </Row>
-      <Row className="recipe-reviewed-items recipe-reviewed-items--grid mt-3">
+      <Row className="recipe-reviewed-items recipe-reviewed-items--grid mt-5">
         <Col>
           <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
             <Tab eventKey="helpful" title="Most Helpful">
